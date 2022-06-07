@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var nome = window.prompt('Digite seu nome');
+        document.write(`Olá, <Strong>${nome}</Strong>! Seu nome tem ${nome.length} letras.`);
+        document.write(`<br>Seu nome em maiúsculo é: ${nome.toUpperCase()}`);
+        document.write(`<br>Seu nome em minúsculo é: ${nome.toLowerCase()}`);
+
+        /** Funções para números
+         * n.toFixed(2) - arredonda o número para 2 casas decimais
+         * n.toString() - converte o número para string
+         * n1.toFixed(2).replace('.', ',') - converte o número para string e substitui o ponto por vírgula
+         * n1.toLocaleString('pt-BR') - converte o número para string como o local do usuário (neste caso, português do Brasil)
+         * n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) - converte o número para string como o local do usuário (neste caso, Moeda Brasileira) e formata como moeda
+         * n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}) - converte o número para string como o local do usuário (neste caso, Dólar Americano) e formata como moeda
+         * n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}) - converte o número para string como o local do usuário (neste caso, Euro) e formata como moeda
+         * n1.toLocaleString('pt-BR', {style: 'currency', currency: 'GBP'}) - converte o número para string como o local do usuário (neste caso, Libra Esterlina) e formata como moeda
+         */
+
+    </script>
+</body>
+
+</html>
