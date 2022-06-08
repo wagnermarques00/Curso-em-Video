@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            /* Alterou a fonte */
+            background-color: green;
+            /* Alterou a cor do background */
+            color: white;
+            /* Alterou a cor do texto */
+            width: 200px;
+            /* Alterou a largura do elemento */
+            height: 200px;
+            /* Alterou a altura do elemento */
+            line-height: 200px;
+            /* Alterou o tamanho da linha. Normalmente utilizado para distâncias entre linhas e textos */
+            text-align: center;
+            /* Alterou o alinhamento do texto para centralizado */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="area">
+        Interaja...
+
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area');
+        //addEventListener -> Adiciona um evento a um elemento
+        a.addEventListener('click', clicar); // Ao clicar no elemento, chama a função clicar
+        a.addEventListener('mouseenter', entrar); // Ao entrar no elemento, chama a função entrar
+        a.addEventListener('mouseout', sair); // Ao sair do elemento, chama a função sair
+
+        function clicar() {
+            a.innerText = 'Clicou!';
+            a.style.background = 'red';
+        }
+        function entrar() {
+            a.innerText = 'Entrou!';
+        }
+        function sair() {
+            a.innerText = 'Saiu!';
+            a.style.background = 'green';
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- Documentação sobre eventos no site da Mozilla:
+    https://developer.mozilla.org/pt-BR/docs/Web/Events
+-->

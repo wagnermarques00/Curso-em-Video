@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+
+<body>
+    <h1>Nacionalidade Brasileira?</h1>
+    Digite seu País: <input type="text" name="txtPais" id="txtPais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="resultado"></div>
+
+    <script>
+        function verificar() {
+            var pais = window.document.getElementById("txtPais");
+            pais = pais.value;
+            paisEsperado = 'Brasil';
+            var resultado = window.document.getElementById("resultado");
+            if (pais.toUpperCase() == paisEsperado.toUpperCase()) {
+                resultado.innerHTML = "Você é Brasileiro!";
+            } else {
+                resultado.innerHTML = "Você não é Brasileiro!";
+            }
+        }
+    </script>
+</body>
+
+</html>

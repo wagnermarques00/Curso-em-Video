@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: cornflowerblue;
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id = "msg">Clique em mim</div>
+    <script>
+        var corpo = window.document.body;
+        corpo.style.background = "black"; // Alterou a cor do background que previamente era cornflowerblue para black
+        var p1 = window.document.getElementsByTagName('p')[0];
+        window.document.writeln(" Está escrito assim: " + p1.innerText + "<br>");
+        window.document.writeln("Link interno: " + window.document.URL);
+        p1.style.color = "red";
+
+        var d = window.document.getElementById('msg');
+        d.style.background = "green"; // Alterou a cor do background que previamente era cornflowerblue para green
+        d.innerText = "Texto alterado";
+        /** Seletores Get
+         * document.getElementById('id'); -> Seleciona o elemento pelo id
+         * document.getElementsByTagName('tag'); -> Seleciona todos os elementos da tag
+         * document.getElementsByClassName('class'); -> Seleciona todos os elementos da classe
+         * document.getElementsByName('name'); -> Seleciona todos os elementos com o nome
+         * document.getElementsByAttribute('atributo'); -> Seleciona todos os elementos com o atributo
+         * document.getElementsByQuery('query'); -> Seleciona todos os elementos com o query
+         * document.getElementsByCss('css'); -> Seleciona todos os elementos com o css
+         * document.getElementsByXPath('xpath'); -> Seleciona todos os elementos com o xpath
+         */
+
+         /** Seletores Query
+          * document.querySelector('query'); -> Seleciona o primeiro elemento com o query
+          * document.querySelectorAll('query'); -> Seleciona todos os elementos com o query
+          */
+
+        // innerHTML -> Retorna o conteúdo HTML do elemento
+        // innerText -> Retorna o conteúdo textual do elemento (sem formatação)
+
+    </script>
+</body>
+
+</html>
+
+<!--
+    Árvore DOM: acessar a página abaixo para documentação
+    https://developer.mozilla.org/pt-BR/docs/Web/API/Document        
+-->
