@@ -1,4 +1,4 @@
-// IF de condição simples
+// Condição Simples (if)
 var velocidade = 10;
 console.log(`A velocidade do carro é: ${velocidade}km/h`);
 if (velocidade > 60) {

@@ -1,4 +1,4 @@
-// If Else 
+// Condição Composta (if else)
 var pais = 'Brasil';
 console.log(`Você está em ${pais}`);
 if (pais == 'Brasil') {
