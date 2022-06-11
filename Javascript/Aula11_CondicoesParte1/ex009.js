@@ -1,8 +1,8 @@
 // Condição Composta (if else)
-var pais = 'Brasil';
+var pais = "Brasil";
 console.log(`Você está em ${pais}`);
-if (pais == 'Brasil') {
-    console.log('Brasileiro');
+if (pais == "Brasil") {
+    console.log("Brasileiro");
 } else {
-    console.log('Estrangeiro');
-}	
+    console.log("Estrangeiro");
+}
